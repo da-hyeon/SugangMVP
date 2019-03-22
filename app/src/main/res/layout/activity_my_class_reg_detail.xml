@@ -1,0 +1,750 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="myClassRegDetail"
+            type="com.dutch_pay.hdh.sugangmvp.ui.activity.myClassRegDetail.MyClassRegDetailActivity"/>
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/mainBackgroundColor"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@color/mainColor">
+
+            <ImageView
+                android:id="@+id/ivBack"
+                android:layout_width="38dp"
+                android:layout_height="38dp"
+                android:layout_gravity="center_vertical|left"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/ico_left" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="나의신청 상세내역"
+                    android:textColor="@android:color/white"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+        </FrameLayout>
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <com.dutch_pay.hdh.sugangmvp.ui.widget.NonFocusingScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:fillViewport="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_margin="10dp"
+                        android:orientation="vertical">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/xml_border_box"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="39dp"
+                                android:orientation="horizontal">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="39dp"
+                                    android:layout_weight="1"
+                                    android:gravity="center_vertical"
+                                    android:orientation="horizontal"
+                                    android:paddingLeft="1dp">
+
+                                    <TextView
+                                        android:layout_width="80dp"
+                                        android:layout_height="match_parent"
+                                        android:gravity="center_vertical|left"
+                                        android:paddingLeft="10dp"
+                                        android:text="강좌제목"
+                                        android:textColor="@color/mainFontColor"
+                                        android:textSize="14dp" />
+
+                                    <View
+                                        android:layout_width="1px"
+                                        android:layout_height="match_parent"
+                                        android:background="@color/mainFontColor" />
+
+                                    <FrameLayout
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1"
+                                        android:clickable="true">
+
+                                        <TextView
+                                            android:id="@+id/tvLB_subject"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:gravity="center_vertical"
+                                            android:paddingLeft="10dp"
+                                            android:textColor="@color/blackColor"
+                                            android:textSize="14dp" />
+                                    </FrameLayout>
+                                </LinearLayout>
+                            </LinearLayout>
+
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1px"
+                                android:background="@color/mainFontColor" />
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="39dp"
+                                android:layout_weight="1"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal"
+                                android:paddingLeft="1dp">
+
+                                <TextView
+                                    android:layout_width="80dp"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center_vertical|left"
+                                    android:paddingLeft="10dp"
+                                    android:text="강의실"
+                                    android:textColor="@color/mainFontColor"
+                                    android:textSize="14dp" />
+
+                                <View
+                                    android:layout_width="1px"
+                                    android:layout_height="match_parent"
+                                    android:background="@color/mainFontColor" />
+
+
+                                <FrameLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:clickable="true">
+
+                                    <TextView
+                                        android:id="@+id/tvLB_room"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:gravity="center_vertical"
+                                        android:paddingLeft="10dp"
+                                        android:textColor="@color/blackColor"
+                                        android:textSize="14dp" />
+
+                                </FrameLayout>
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1px"
+                                android:background="@color/mainFontColor" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="39dp"
+                                android:layout_weight="1"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal"
+                                android:paddingLeft="1dp">
+
+                                <TextView
+                                    android:layout_width="80dp"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center_vertical|left"
+                                    android:paddingLeft="10dp"
+                                    android:text="대상학년"
+                                    android:textColor="@color/mainFontColor"
+                                    android:textSize="14dp" />
+
+                                <View
+                                    android:layout_width="1px"
+                                    android:layout_height="match_parent"
+                                    android:background="@color/mainFontColor" />
+
+                                <FrameLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:clickable="true">
+
+                                    <TextView
+                                        android:id="@+id/tvS_LB_grade"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:gravity="center_vertical"
+                                        android:paddingLeft="10dp"
+                                        android:textColor="@color/blackColor"
+                                        android:textSize="14dp" />
+                                </FrameLayout>
+                            </LinearLayout>
+
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1px"
+                                android:background="@color/mainFontColor" />
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="39dp"
+                                android:orientation="horizontal">
+
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="39dp"
+                                    android:layout_weight="1"
+                                    android:gravity="center_vertical"
+                                    android:orientation="horizontal"
+                                    android:paddingLeft="1dp">
+
+                                    <TextView
+                                        android:layout_width="80dp"
+                                        android:layout_height="match_parent"
+                                        android:gravity="center_vertical|left"
+                                        android:paddingLeft="10dp"
+                                        android:text="최대인원"
+                                        android:textColor="@color/mainFontColor"
+                                        android:textSize="14dp" />
+
+                                    <View
+                                        android:layout_width="1px"
+                                        android:layout_height="match_parent"
+                                        android:background="@color/mainFontColor" />
+
+
+                                    <FrameLayout
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="2"
+                                        android:clickable="true">
+
+                                        <TextView
+                                            android:id="@+id/tvLB_max"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:gravity="center_vertical"
+                                            android:paddingLeft="10dp"
+                                            android:textColor="@color/blackColor"
+                                            android:textSize="14dp" />
+
+                                    </FrameLayout>
+                                </LinearLayout>
+
+                                <View
+                                    android:layout_width="1px"
+                                    android:layout_height="match_parent"
+                                    android:background="@color/mainFontColor" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="39dp"
+                                    android:layout_weight="1"
+                                    android:gravity="center_vertical"
+                                    android:orientation="horizontal"
+                                    android:paddingLeft="1dp">
+
+                                    <TextView
+                                        android:layout_width="80dp"
+                                        android:layout_height="match_parent"
+                                        android:gravity="center_vertical|left"
+                                        android:paddingLeft="10dp"
+                                        android:text="최소인원"
+                                        android:textColor="@color/mainFontColor"
+                                        android:textSize="14dp" />
+
+                                    <View
+                                        android:layout_width="1px"
+                                        android:layout_height="match_parent"
+                                        android:background="@color/mainFontColor" />
+
+
+                                    <FrameLayout
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1"
+                                        android:clickable="true">
+
+                                        <TextView
+                                            android:id="@+id/tvLB_min"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:gravity="center_vertical"
+                                            android:paddingLeft="10dp"
+                                            android:textColor="@color/blackColor"
+                                            android:textSize="14dp" />
+
+                                    </FrameLayout>
+                                </LinearLayout>
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1px"
+                                android:background="@color/mainFontColor" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="39dp"
+                                android:orientation="horizontal">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="39dp"
+                                    android:layout_weight="1"
+                                    android:gravity="center_vertical"
+                                    android:orientation="horizontal"
+                                    android:paddingLeft="1dp">
+
+                                    <TextView
+                                        android:layout_width="80dp"
+                                        android:layout_height="match_parent"
+                                        android:gravity="center_vertical|left"
+                                        android:paddingLeft="10dp"
+                                        android:text="영역별"
+                                        android:textColor="@color/mainFontColor"
+                                        android:textSize="14dp" />
+
+                                    <View
+                                        android:layout_width="1px"
+                                        android:layout_height="match_parent"
+                                        android:background="@color/mainFontColor" />
+
+                                    <FrameLayout
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1"
+                                        android:clickable="true">
+
+                                        <TextView
+                                            android:id="@+id/tvS_LB_area"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:gravity="center_vertical"
+                                            android:paddingLeft="10dp"
+                                            android:textColor="@color/blackColor"
+                                            android:textSize="14dp" />
+                                    </FrameLayout>
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1px"
+                                android:background="@color/mainFontColor" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="39dp"
+                                android:orientation="horizontal">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="39dp"
+                                    android:layout_weight="1"
+                                    android:gravity="center_vertical"
+                                    android:orientation="horizontal"
+                                    android:paddingLeft="1dp">
+
+                                    <TextView
+                                        android:layout_width="80dp"
+                                        android:layout_height="match_parent"
+                                        android:gravity="center_vertical|left"
+                                        android:paddingLeft="10dp"
+                                        android:text="총시수"
+                                        android:textColor="@color/mainFontColor"
+                                        android:textSize="14dp" />
+
+                                    <View
+                                        android:layout_width="1px"
+                                        android:layout_height="match_parent"
+                                        android:background="@color/mainFontColor" />
+
+                                    <FrameLayout
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1"
+                                        android:clickable="true">
+
+                                        <TextView
+                                            android:id="@+id/tvLB_told"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:gravity="center_vertical"
+                                            android:paddingLeft="10dp"
+                                            android:textColor="@color/blackColor"
+                                            android:textSize="14dp" />
+                                    </FrameLayout>
+                                </LinearLayout>
+
+                                <View
+                                    android:layout_width="1px"
+                                    android:layout_height="match_parent"
+                                    android:background="@color/mainFontColor" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="39dp"
+                                    android:layout_weight="1"
+                                    android:gravity="center_vertical"
+                                    android:orientation="horizontal"
+                                    android:paddingLeft="1dp">
+
+                                    <TextView
+                                        android:layout_width="80dp"
+                                        android:layout_height="match_parent"
+                                        android:gravity="center_vertical|left"
+                                        android:paddingLeft="10dp"
+                                        android:text="수준별"
+                                        android:textColor="@color/mainFontColor"
+                                        android:textSize="14dp" />
+
+                                    <View
+                                        android:layout_width="1px"
+                                        android:layout_height="match_parent"
+                                        android:background="@color/mainFontColor" />
+
+
+                                    <FrameLayout
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1"
+                                        android:clickable="true">
+
+                                        <TextView
+                                            android:id="@+id/tvLB_level"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:gravity="center_vertical"
+                                            android:paddingLeft="10dp"
+                                            android:textColor="@color/blackColor"
+                                            android:textSize="14dp" />
+
+                                    </FrameLayout>
+                                </LinearLayout>
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1px"
+                                android:background="@color/mainFontColor" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="39dp"
+                                android:orientation="horizontal">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="39dp"
+                                    android:layout_weight="1"
+                                    android:gravity="center_vertical"
+                                    android:orientation="horizontal"
+                                    android:paddingLeft="1dp">
+
+                                    <TextView
+                                        android:layout_width="80dp"
+                                        android:layout_height="match_parent"
+                                        android:gravity="center_vertical|left"
+                                        android:paddingLeft="10dp"
+                                        android:text="추가교재비"
+                                        android:textColor="@color/mainFontColor"
+                                        android:textSize="14dp" />
+
+                                    <View
+                                        android:layout_width="1px"
+                                        android:layout_height="match_parent"
+                                        android:background="@color/mainFontColor" />
+
+                                    <FrameLayout
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1"
+                                        android:clickable="true">
+
+                                        <TextView
+                                            android:id="@+id/tvLB_addcost"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:gravity="center_vertical"
+                                            android:paddingLeft="10dp"
+                                            android:textColor="@color/blackColor"
+                                            android:textSize="14dp" />
+                                    </FrameLayout>
+                                </LinearLayout>
+
+                                <View
+                                    android:layout_width="1px"
+                                    android:layout_height="match_parent"
+                                    android:background="@color/mainFontColor" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="39dp"
+                                    android:layout_weight="1"
+                                    android:gravity="center_vertical"
+                                    android:orientation="horizontal"
+                                    android:paddingLeft="1dp">
+
+                                    <TextView
+                                        android:layout_width="80dp"
+                                        android:layout_height="match_parent"
+                                        android:gravity="center_vertical|left"
+                                        android:paddingLeft="10dp"
+                                        android:text="지도교사"
+                                        android:textColor="@color/mainFontColor"
+                                        android:textSize="14dp" />
+
+                                    <View
+                                        android:layout_width="1px"
+                                        android:layout_height="match_parent"
+                                        android:background="@color/mainFontColor" />
+
+
+                                    <FrameLayout
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1"
+                                        android:clickable="true">
+
+                                        <TextView
+                                            android:id="@+id/tvRX_name"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:gravity="center_vertical"
+                                            android:paddingLeft="10dp"
+                                            android:textColor="@color/blackColor"
+                                            android:textSize="14dp" />
+
+                                    </FrameLayout>
+                                </LinearLayout>
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1px"
+                                android:background="@color/mainFontColor" />
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="39dp"
+                                android:orientation="horizontal">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="39dp"
+                                    android:layout_weight="1"
+                                    android:gravity="center_vertical"
+                                    android:orientation="horizontal"
+                                    android:paddingLeft="1dp">
+
+                                    <TextView
+                                        android:layout_width="80dp"
+                                        android:layout_height="match_parent"
+                                        android:gravity="center_vertical|left"
+                                        android:paddingLeft="10dp"
+                                        android:text="강좌시간"
+                                        android:textColor="@color/mainFontColor"
+                                        android:textSize="14dp" />
+
+                                    <View
+                                        android:layout_width="1px"
+                                        android:layout_height="match_parent"
+                                        android:background="@color/mainFontColor" />
+
+                                    <FrameLayout
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1"
+                                        android:clickable="true">
+
+                                        <TextView
+                                            android:id="@+id/tvS_LB_time"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:gravity="center_vertical"
+                                            android:paddingLeft="10dp"
+                                            android:textColor="@color/blackColor"
+                                            android:textSize="14dp" />
+                                    </FrameLayout>
+                                </LinearLayout>
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1px"
+                                android:background="@color/mainFontColor" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="39dp"
+                                android:orientation="horizontal">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="39dp"
+                                    android:layout_weight="1"
+                                    android:gravity="center_vertical"
+                                    android:orientation="horizontal"
+                                    android:paddingLeft="1dp">
+
+                                    <TextView
+                                        android:layout_width="80dp"
+                                        android:layout_height="match_parent"
+                                        android:gravity="center_vertical|left"
+                                        android:paddingLeft="10dp"
+                                        android:text="강좌내용"
+                                        android:textColor="@color/mainFontColor"
+                                        android:textSize="14dp" />
+
+                                    <View
+                                        android:layout_width="1px"
+                                        android:layout_height="match_parent"
+                                        android:background="@color/mainFontColor" />
+
+                                    <FrameLayout
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1"
+                                        android:clickable="true">
+
+                                        <TextView
+                                            android:id="@+id/tvLB_content"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:gravity="center_vertical"
+                                            android:paddingLeft="10dp"
+                                            android:textColor="@color/blackColor"
+                                            android:textSize="14dp" />
+                                    </FrameLayout>
+                                </LinearLayout>
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1px"
+                                android:background="@color/mainFontColor" />
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="39dp"
+                                android:orientation="horizontal">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="39dp"
+                                    android:layout_weight="1"
+                                    android:gravity="center_vertical"
+                                    android:orientation="horizontal"
+                                    android:paddingLeft="1dp">
+
+                                    <TextView
+                                        android:layout_width="80dp"
+                                        android:layout_height="match_parent"
+                                        android:gravity="center_vertical|left"
+                                        android:paddingLeft="10dp"
+                                        android:text="사용교재"
+                                        android:textColor="@color/mainFontColor"
+                                        android:textSize="14dp" />
+
+                                    <View
+                                        android:layout_width="1px"
+                                        android:layout_height="match_parent"
+                                        android:background="@color/mainFontColor" />
+
+                                    <FrameLayout
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1"
+                                        android:clickable="true">
+
+                                        <TextView
+                                            android:id="@+id/tvLB_book"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:gravity="center_vertical"
+                                            android:paddingLeft="10dp"
+                                            android:textColor="@color/blackColor"
+                                            android:textSize="14dp" />
+                                    </FrameLayout>
+                                </LinearLayout>
+                            </LinearLayout>
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </com.dutch_pay.hdh.sugangmvp.ui.widget.NonFocusingScrollView>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|right"
+                android:orientation="vertical">
+
+
+                <ru.dimorinny.floatingtextbutton.FloatingTextButton
+                    android:id="@+id/fbClassWeek"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:floating_background_color="@color/btnMainColor"
+                    app:floating_left_icon="@drawable/ico_cal"
+                    app:floating_title="강좌요일"
+                    app:floating_title_color="@android:color/white" />
+
+                <ru.dimorinny.floatingtextbutton.FloatingTextButton
+                    android:id="@+id/fbClassConfirm"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:floating_background_color="@color/btnSubColor"
+                    app:floating_left_icon="@drawable/ico_del"
+                    app:floating_title="삭제"
+                    app:floating_title_color="@android:color/white" />
+
+            </LinearLayout>
+
+        </FrameLayout>
+    </LinearLayout>
+</layout>

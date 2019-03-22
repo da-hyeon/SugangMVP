@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+
+    <color name="background">#3b3b3b</color>
+
+    <!--화이트-->
+    <color name="whiteColor">#ffffff</color>
+    <!--블랙-->
+    <color name="blackColor">#000000</color>
+
+    <!--메인컬러-->
+    <color name="mainFontColor">#58585A</color>
+    <color name="mainColor">#3b3b45</color><!---->
+    <color name="mainLineColor">#13B7EA</color>
+    <color name="subLineColor">#A4CA63</color>
+    <!--<color name="mainColorSub">#1974D2</color>-->
+    <color name="subMainColor">#E07070</color>
+    <color name="subColor">#ff9c00</color>
+    <color name="subBackColor">#E99D2D</color>
+    <!--<color name="mainBackgroundColor">#F5F9EF</color>-->
+    <color name="mainBackgroundColor">#EFEEED</color>
+    <color name="subBackgroundColor">#dadae0</color>
+    <color name="mainBoardLineColor">#3C5D52</color>
+
+    <color name="btnMainColor">#3b3b45</color>
+    <color name="btnMainPressColor">#444A4E</color>
+
+    <color name="btnSubColor">#C63233</color>
+    <color name="btnSubPressColor">#C64233</color>
+
+    <color name="btnThirdColor">#0F9D58</color>
+    <color name="btnThirdPressColor">#0F7D58</color>
+
+    <!--메인버튼 베이직 color-->
+    <color name="btPress">#13A5EA</color>
+    <color name="btNormal">#13B7EA</color>
+
+    <!--서브버튼 베이직 color-->
+    <color name="btSubPress">#A4bA63</color>
+    <color name="btSubNormal">#A4CA63</color>
+
+    <!--써드버튼 베이직 color-->
+    <color name="btThirdPress">#64CBDB</color>
+    <color name="btThirdNormal">#64CBDB</color>
+
+    <!--포스버튼 베이직 color-->
+    <color name="btFourthPress">#FE952C</color>
+    <color name="btFourthNormal">#FE952C</color>
+
+
+    <!--그레이-->
+    <color name="NormalGray">#E3E4DF</color>
+    <color name="FontGray">#858583</color>
+
+    <!--메인컬러-->
+
+    <color name="subColorSub">#ff9b0c</color>
+    <!--<color name="mainColorSub">#1974D2</color>-->
+    <color name="SubMainColor">#E07070</color>
+
+    <color name="blue">#00498c</color>
+    <color name="darkred">#8B0000</color>
+
+
+
+
+
+
+
+    <!--그레이-->
+    <color name="HardGray">#969696</color>
+    <color name="Gray">#353535</color>
+</resources>

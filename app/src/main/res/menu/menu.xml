@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/menuNotice"
+        android:title="공지사항"
+        android:icon="@drawable/menu_icon_selector5"
+        />
+
+
+    <item
+        android:id="@+id/menuClassReg"
+        android:title="수강신청"
+        android:icon="@drawable/menu_icon_selector1"
+        />
+
+    <item
+        android:id="@+id/menuSearchClassReg"
+        android:title="나의신청내역"
+        android:icon="@drawable/menu_icon_selector2"
+        />
+
+    <item
+        android:id="@+id/menuSurvey"
+        android:title="설문조사"
+        android:icon="@drawable/menu_icon_selector3"
+        />
+
+    <item
+        android:id="@+id/menuSatisfactionLevel"
+        android:title="수업만족도조사"
+        android:icon="@drawable/menu_icon_selector4"
+        />
+</menu>

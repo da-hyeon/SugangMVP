@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/whiteColor"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/llSearchFieldType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/rbReasonForCancelDefault"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:background="@android:color/transparent"
+            android:button="@null"
+            android:gravity="center"
+            android:tag="1"
+            android:text="제목"
+            android:textColor="@color/mainFontColor"
+            android:textSize="15dp"
+            android:textStyle="bold"
+
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:background="@color/mainColor" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:background="@android:color/transparent"
+            android:button="@null"
+            android:gravity="center"
+            android:tag="2"
+            android:text="내용"
+            android:textColor="@color/mainFontColor"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:background="@color/mainColor" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:background="@android:color/transparent"
+            android:button="@null"
+            android:gravity="center"
+            android:tag="3"
+            android:text="이름"
+            android:textColor="@color/mainFontColor"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:background="@color/mainColor" />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/viewCover"
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:clickable="true"
+        android:visibility="gone" />
+
+</LinearLayout>

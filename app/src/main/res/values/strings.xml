@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">방과후학교\n운영시스템</string>
+    <string name="no_search_string">검색된 항목이 없습니다.</string>
+    <string name="terms_str1">
+        ○ 수집,이용 목적 : 방과후학교 온라인 수강신청
+    </string>
+    <string name="terms_str2">
+        ○ 수집항목 : 학번,이름,비밀번호,성별,본인확인 질문,본인확인 답변
+    </string>
+    <string name="terms_str3">
+        ○ 보유 및 이용 기간 : 학생의 본교 재학기간
+    </string>
+    <string name="terms_str4">
+        ○ 동의를 거부할 권리가 있으며 거부시 방과후 학교 운영시스템 수강신청이 제한될 수 있음
+    </string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

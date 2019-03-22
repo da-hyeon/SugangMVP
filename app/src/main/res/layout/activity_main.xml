@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+        <variable
+            name="mainActivity"
+            type="com.dutch_pay.hdh.sugangmvp.ui.activity.main.MainActivity"/>
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true">
+
+        <include
+            android:id="@+id/layoutMainBody"
+            layout="@layout/layout_main_body" />
+
+    </LinearLayout>
+</layout>
